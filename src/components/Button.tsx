@@ -23,7 +23,7 @@ export function Button({ title, ...rest }: ButtonProps) {
 
 const styles = StyleSheet.create({
     container: {
-        backgroundColor: colors.green,
+        backgroundColor: colors.blue,
         height: 56,
         borderRadius: 16,
         justifyContent: 'center',

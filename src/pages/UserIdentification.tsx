@@ -33,7 +33,7 @@ export function UserIdentification({ route, navigation }: Props) {
             await AsyncStorage.setItem('@quizzed:username', name);
             navigation.navigate('Confirmation', {
                 title: 'Prontinho',
-                subtitle: 'Agora vamos começar a cuidar das suas plantinhas com muito cuidado',
+                subtitle: 'Agora vamos começar a patricar!',
                 buttonTitle: 'Começar',
                 icon: 'smile',
                 nextScreen: 'MapBoard',
@@ -79,7 +79,7 @@ export function UserIdentification({ route, navigation }: Props) {
                                 placeholder='Digite um nome'
                                 style={[
                                 styles.input,
-                                (isFocused || isFilled) && { borderColor: colors.green } 
+                                (isFocused || isFilled) && { borderColor: colors.blue } 
                                 ]}
                                 onBlur={handleInputBlur}
                                 onFocus={handleInputFocus}

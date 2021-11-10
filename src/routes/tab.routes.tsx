@@ -11,7 +11,8 @@ const AuthRoutes = () => {
     return (
         <AppTab.Navigator
             screenOptions={{
-                tabBarActiveTintColor: colors.green,
+                headerShown: false,
+                tabBarActiveTintColor: colors.blue,
                 tabBarInactiveTintColor: colors.heading,
                 tabBarLabelPosition: 'beside-icon',
                 tabBarStyle: {
@@ -21,12 +22,12 @@ const AuthRoutes = () => {
             }}
         >
         <AppTab.Screen
-            name="Fases"
+            name="Quiz"
             component={MapBoard}
             options={{
                 tabBarIcon: (({ size, color } : {size: any, color: any}) => (
                     <MaterialIcons 
-                        name="add-circle-outline"
+                        name="dynamic-form"
                         size={size}
                         color={color}
                     />
@@ -39,7 +40,7 @@ const AuthRoutes = () => {
             options={{
                 tabBarIcon: (({ size, color } : {size: any, color: any}) => (
                     <MaterialIcons 
-                        name="format-list-bulleted"
+                        name="star"
                         size={size}
                         color={color}
                     />

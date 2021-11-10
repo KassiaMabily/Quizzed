@@ -7,7 +7,7 @@ import {
 } from '@expo-google-fonts/jost'
 import AppLoading from 'expo-app-loading';
 
-// import Routes from './src/routes';
+import Routes from './src/routes';
 
 export default function App() {
   const [ fontsLoaded ] = useFonts({
@@ -20,6 +20,6 @@ export default function App() {
   }
 
   return (
-    <></>
+    <Routes />
   );
 }

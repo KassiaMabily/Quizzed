@@ -1,0 +1,80 @@
+[
+    {
+        "title": "(CESPE – INMETRO – Pesquisador) Com relação ao  padrão BPMN  (Business  Processes Management Notation ), assinale a opção correta. ",
+        "difficult": 1,
+        "options": [
+            {
+                "alterative": "O  BPMN  provê  uma  notação  comum  para  que  as  pessoas  relacionadas  com  os processos  possam  expressá-los  graficamente  de  uma  forma  clara,  padronizada  e completa. ",
+                "is_correct": true
+            },
+            {
+                "alternative": "O   BPMN  é  uma  notação   proprietária,  mas  bastante  difundida  na  gestão  por  processos de negócio. ",
+                "is_correct": false
+            },
+            {
+                "alternative": "O BPMN facilita a padronização dos  processos apenas dentro das  organizações.",
+                "is_correct": false
+            },
+            {
+                "alternative": "O  BPMN  define  um  diagrama  de  processo  de  negócio  (Business  Process  Diagram)  para ser usado somente  para o mapeamento dos processos de negócio.",
+                "is_correct": false
+            },
+            {
+                "alternative": "A notação BPMN é largamente utilizada na gestão por processos de negócio e define os  objetos  básicos  como  atividades,  pontos  de  decisão,  início  e  termino  de  processo, deixando  a  critério  dos  analistas  de   processo  a   melhor  forma  de  utilizá-los  na representação dos processo",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "title": "(AOCP –  EBSERH –  Analista de Tecnologia da Informação) Uma das notações mais difundidas pela OMG como padrão para a modelagem de  processos e que possui recursos sofisticados é conhecida com o:",
+        "difficult": 1,
+        "options": [
+            {
+                "alterative": "Fluxograma",
+                "is_correct": true
+            },
+            {
+                "alternative": "Visio",
+                "is_correct": false
+            },
+            {
+                "alternative": "UML",
+                "is_correct": false
+            },
+            {
+                "alternative": "BPMN",
+                "is_correct": true
+            },
+            {
+                "alternative": "CMMI",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "title": "",
+        "difficult": 1,
+        "options": [
+            {
+                "alterative": "",
+                "is_correct": true
+            },
+            {
+                "alternative": "",
+                "is_correct": false
+            },
+            {
+                "alternative": "",
+                "is_correct": false
+            },
+            {
+                "alternative": "",
+                "is_correct": false
+            },
+            {
+                "alternative": "",
+                "is_correct": false
+            }
+        ]
+    }
+]
