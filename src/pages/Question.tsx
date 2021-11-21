@@ -101,6 +101,10 @@ export function Question({ route, navigation }: Props) {
                 style={{ width: "100%" }}
                 contentContainerStyle={styles.content}
             >
+                <View style={styles.wrapperAttempts}>
+                    <Text style={styles.attempts}>Você possui: </Text>
+                    <Text style={styles.attempts}>{remainingAttempts + 1} { remainingAttempts + 1 > 1 ? "tentativas" : "tentativa"} </Text>
+                </View>
                 <Text style={styles.title}>{currentQuestion.title}</Text>
 
                 <View style={styles.optionWrapper}>
@@ -148,10 +152,22 @@ const styles = StyleSheet.create({
         width: '100%',
         padding: 30,
     },
+    wrapperAttempts: {
+        width: "100%",
+        flexDirection: "row",
+        alignItems: "center",
+        justifyContent: "space-between",
+        marginBottom: 15,
+    },
+    attempts: {
+        fontFamily: fonts.heading,
+        color: colors.red,
+    },
     title: {
         marginBottom: 15,
         textAlign: "justify",
-        fontFamily: fonts.heading
+        fontFamily: fonts.heading,
+        fontSize: 16
     },
     optionWrapper: {
         width: "100%",
@@ -163,6 +179,7 @@ const styles = StyleSheet.create({
         borderRadius: 16,
         paddingVertical: 10,
         paddingHorizontal: 10,
+        fontSize: 14
     },
     optionText: {
         textAlign: "justify",
