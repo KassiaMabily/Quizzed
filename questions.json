@@ -1,7 +1,7 @@
 [
     {
         "title": "(CESPE – INMETRO – Pesquisador) Com relação ao  padrão BPMN  (Business  Processes Management Notation ), assinale a opção correta. ",
-        "difficulty": 1,
+        "difficulty": 2,
         "options": [
             {
                 "alternative": "O  BPMN  provê  uma  notação  comum  para  que  as  pessoas  relacionadas  com  os processos  possam  expressá-los  graficamente  de  uma  forma  clara,  padronizada  e completa. ",
@@ -52,27 +52,27 @@
         ]
     },
     {
-        "title": "",
+        "title": "(IBFC – INEP – Pesquisador) Segundo a notação BPMN a representação gráfica do objeto 'gateway' é dada por um:",
         "difficulty": 1,
         "options": [
             {
-                "alternative": "",
+                "alternative": "hexágono",
+                "is_correct": false
+            },
+            {
+                "alternative": "retângulo",
+                "is_correct": false
+            },
+            {
+                "alternative": "triângulo",
+                "is_correct": false
+            },
+            {
+                "alternative": "losango",
                 "is_correct": true
             },
             {
-                "alternative": "",
-                "is_correct": false
-            },
-            {
-                "alternative": "",
-                "is_correct": false
-            },
-            {
-                "alternative": "",
-                "is_correct": false
-            },
-            {
-                "alternative": "",
+                "alternative": "círculo",
                 "is_correct": false
             }
         ]

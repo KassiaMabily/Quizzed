@@ -3,6 +3,6 @@ export type RootStackParamList = {
     UserIdentification: undefined;
     Confirmation: { title: string, subtitle: string, buttonTitle:string, icon: string, nextScreen: string };
     Ranking: undefined;
-    Question: { difficulty: number };
+    Question: { difficulty: number, row: number, column: number };
     MapBoard: undefined;
 };

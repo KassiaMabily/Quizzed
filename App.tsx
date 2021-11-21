@@ -6,6 +6,7 @@ import {
   Jost_600SemiBold
 } from '@expo-google-fonts/jost'
 import AppLoading from 'expo-app-loading';
+import { AuthProvider } from "./src/contexts/auth";
 
 import Routes from './src/routes';
 
@@ -20,6 +21,8 @@ export default function App() {
   }
 
   return (
-    <Routes />
+    <AuthProvider>
+      <Routes />
+    </AuthProvider>
   );
 }

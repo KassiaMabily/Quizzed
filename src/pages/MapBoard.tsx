@@ -6,6 +6,9 @@ import colors from '../styles/colors';
 import { boardLoad, getCurrentPhase } from '../libs/storage';
 import { StackScreenProps } from '@react-navigation/stack';
 import { RootStackParamList } from '../routes/types';
+import { useAuth } from '../contexts/auth';
+import { Header } from '../components/Header';
+import { useIsFocused } from '@react-navigation/core';
 
 const windowWidth = Dimensions.get('window').width;
 
@@ -21,15 +24,13 @@ const BOARD = [
 
 type Props = StackScreenProps<RootStackParamList, 'MapBoard'>;
 export function MapBoard({ route, navigation }: Props) {
-    const scrollViewRef = createRef<ScrollView>();
-    const [ difficulty, setDifficulty ] = useState<number>(0);
-
-    const [ userBoard, setUserBoard ] = useState<(boolean| null)[][]>();
-    const [ currentRow, setCurrentRow ] = useState(0);
-    const [ currentColumn, setCurrentColumn ] = useState(0);
-
     const size = 80;
     const radius = 40;
+
+    const isFocused = useIsFocused();
+    const scrollViewRef = createRef<ScrollView>();
+    const { userBoard, currentRow, currentColumn, loadGame } = useAuth();
+    
 
     const hasNeighbor = (indexRow: number, indexColumn: number) => {
         let top = false;
@@ -64,16 +65,11 @@ export function MapBoard({ route, navigation }: Props) {
 
     
     const countPhases = (indexRow: number, indexColumn: number) => {
-        let count = 0;
+
+        let current = BOARD[currentRow][currentColumn];
+        let new_phase = BOARD[indexRow][indexColumn];
         
-        for(var i = indexRow; i < BOARD.length; i++) {
-            for(var j = indexColumn; j < BOARD[i].length; j++){
-                if(BOARD[i][j] !== 0) {
-                    count++;
-                }
-            }
-        }
-        return count;
+        return (current === 1 && userBoard && !userBoard[currentRow][currentColumn] ? (new_phase - current) + 1 : (new_phase - current));
     }
     
     const renderLine = ({top = false, left = false, right = false, bottom = false}) => {
@@ -115,10 +111,10 @@ export function MapBoard({ route, navigation }: Props) {
         return (
             <TouchableWithoutFeedback
                 onPress={() => {
-                    const nivel_dificuldade = countPhases(indexRow,indexColumn);
+                    let nivel_dificuldade = countPhases(indexRow, indexColumn);
+                    console.log(`Avançar ${nivel_dificuldade} casas`)
                     if(nivel_dificuldade >= 1 && nivel_dificuldade <= 3) {
-                        setDifficulty(nivel_dificuldade);
-                        navigation.navigate("Question", { difficulty: nivel_dificuldade })
+                        navigation.navigate("Question", { difficulty: nivel_dificuldade, row: indexRow, column: indexColumn })
                     }else{
                         Alert.alert(`Você pode avançar até 3 casas!`)
                     }
@@ -129,7 +125,6 @@ export function MapBoard({ route, navigation }: Props) {
                     <Svg.Svg width={size} height={size}>
                         <Svg.Circle
                             fill={userBoard ? userBoard[indexRow][indexColumn] ? colors.green : colors.blue : colors.blue}
-                            stroke={colors.blue}
                             cx={size / 2}
                             cy={size / 2}
                             r={radius}
@@ -150,26 +145,21 @@ export function MapBoard({ route, navigation }: Props) {
     }
 
     useEffect(() => {
-        async function loadStorageData() {
-            const boardStoraged = await boardLoad();
-            const { row, column } = await getCurrentPhase();
-            setUserBoard(boardStoraged);
-
-            setCurrentRow(row);
-            setCurrentColumn(column);
-        }
-    
-        loadStorageData();
-    }, []);
+        loadGame();
+    }, [isFocused])
 
     return (
         <SafeAreaView style={styles.container}>
             <StatusBar style="auto" />
+            <View style={{ marginHorizontal: 20 }}>
+                <Header />
+            </View>
             <ScrollView 
                 ref={scrollViewRef}
                 onContentSizeChange={() => scrollViewRef?.current?.scrollToEnd({ animated: true })}
                 style={styles.scrollView}
             >
+                
                 {
                     BOARD.map((row, indexRow) => {
                         return (

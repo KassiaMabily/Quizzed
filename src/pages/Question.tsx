@@ -5,11 +5,15 @@ import { Alert, StyleSheet, Text, SafeAreaView, View, ScrollView } from 'react-n
 import { TouchableHighlight, TouchableWithoutFeedback } from 'react-native-gesture-handler';
 import questions from "../../questions.json";
 import { Button } from '../components/Button';
+import { Load } from '../components/Load';
+import { useAuth } from '../contexts/auth';
 import { RootStackParamList } from '../routes/types';
 import colors from '../styles/colors';
 import fonts from '../styles/fonts';
 interface Params {
     difficulty: number;
+    row: number;
+    column: number;
 }
 
 type Props = StackScreenProps<RootStackParamList, 'Question'>;
@@ -17,11 +21,15 @@ export function Question({ route, navigation }: Props) {
     const routes = useRoute();
 
     const {
-        difficulty
+        difficulty,
+        row,
+        column
     } = routes.params as Params;
 
+    const { updateExperience, openPhaseBoard } = useAuth();
+
     const [ showAnswer, setShowAnswer ] = useState<boolean>(false);
-    const [ currentQuestion, setCurrentQuestion ] = useState<iQuestion>({} as iQuestion);
+    const [ currentQuestion, setCurrentQuestion ] = useState<iQuestion | null>(null);
     const [ remainingAttempts, setRemainingAttempts ] = useState<number>(0);
     const [ points, setPoints ] = useState<number>(0);
 
@@ -32,7 +40,11 @@ export function Question({ route, navigation }: Props) {
                 Alert.alert("Você acertou!", "", [                
                     { 
                         text: 'OK', 
-                        onPress: () => console.log('OK Pressed') 
+                        onPress: async () => {
+                            await updateExperience(points);
+                            await openPhaseBoard(row, column)
+                            navigation.navigate("MapBoard");
+                        }
                     }
                 ]);
                 
@@ -57,7 +69,9 @@ export function Question({ route, navigation }: Props) {
                 Alert.alert("Você errou :(", "Você voltará para o mapa", [
                     { 
                         text: 'OK', 
-                        onPress: () => console.log('OK Pressed') 
+                        onPress: () => {
+                            navigation.navigate("MapBoard");
+                        }
                     }
                 ])
             }
@@ -66,36 +80,19 @@ export function Question({ route, navigation }: Props) {
     }
 
     useEffect(() => {
-        const startNewQuestion = () => {
-            let count = 0;
-            while (true) 
-            {   
-                let randomChallengeIndex = Math.floor(Math.random() * questions.length);
-                let question: iQuestion = questions[randomChallengeIndex];
-                
-                if(question.difficulty === difficulty && question.title !== "") {
-                    console.log(question);
-                    setCurrentQuestion(question);
-                    setRemainingAttempts(difficulty);
-                    setPoints(difficulty === 1 ? 2 : difficulty === 2 ? 5 : 10)
-                    break;
-                }
-
-                count++;
-
-                if(count >= questions.length) {
-                    break
-                }
-            }
-            
+        let filtered_questions = questions.filter(q => q.difficulty === difficulty)
+        let randomChallengeIndex = Math.floor(Math.random() * filtered_questions.length);
+        if(filtered_questions[randomChallengeIndex]) {
+            setCurrentQuestion(filtered_questions[randomChallengeIndex]);
+            setRemainingAttempts(difficulty - 1);
+            setPoints(difficulty === 1 ? 2 : difficulty === 2 ? 5 : 10)
         }
-
-        startNewQuestion();
+        
     }, [])
 
-    if(!currentQuestion.options)
+    if(currentQuestion === null)
         return (
-            <Text>Carregando...</Text>
+            <Load />
         )
 
     return (

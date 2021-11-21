@@ -17,9 +17,11 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 import { Button } from '../components/Button';
 import colors from '../styles/colors';
 import fonts from '../styles/fonts';
+import { useAuth } from '../contexts/auth';
 
 type Props = StackScreenProps<RootStackParamList, 'UserIdentification'>;
 export function UserIdentification({ route, navigation }: Props) {
+    const { updateUsername } = useAuth();
     const [isFocused, setIsFocused] = useState(false);
     const [isFilled, setIsFilled] = useState(false); 
     const [name, setName] = useState<string>(); 
@@ -30,10 +32,10 @@ export function UserIdentification({ route, navigation }: Props) {
         }
 
         try {
-            await AsyncStorage.setItem('@quizzed:username', name);
+            await updateUsername(name)
             navigation.navigate('Confirmation', {
                 title: 'Prontinho',
-                subtitle: 'Agora vamos começar a patricar!',
+                subtitle: 'Agora vamos começar a praticar!',
                 buttonTitle: 'Começar',
                 icon: 'smile',
                 nextScreen: 'MapBoard',
