@@ -1,10 +1,10 @@
 [
     {
         "title": "(CESPE – INMETRO – Pesquisador) Com relação ao  padrão BPMN  (Business  Processes Management Notation ), assinale a opção correta. ",
-        "difficult": 1,
+        "difficulty": 1,
         "options": [
             {
-                "alterative": "O  BPMN  provê  uma  notação  comum  para  que  as  pessoas  relacionadas  com  os processos  possam  expressá-los  graficamente  de  uma  forma  clara,  padronizada  e completa. ",
+                "alternative": "O  BPMN  provê  uma  notação  comum  para  que  as  pessoas  relacionadas  com  os processos  possam  expressá-los  graficamente  de  uma  forma  clara,  padronizada  e completa. ",
                 "is_correct": true
             },
             {
@@ -27,11 +27,11 @@
     },
     {
         "title": "(AOCP –  EBSERH –  Analista de Tecnologia da Informação) Uma das notações mais difundidas pela OMG como padrão para a modelagem de  processos e que possui recursos sofisticados é conhecida com o:",
-        "difficult": 1,
+        "difficulty": 1,
         "options": [
             {
-                "alterative": "Fluxograma",
-                "is_correct": true
+                "alternative": "Fluxograma",
+                "is_correct": false
             },
             {
                 "alternative": "Visio",
@@ -53,10 +53,10 @@
     },
     {
         "title": "",
-        "difficult": 1,
+        "difficulty": 1,
         "options": [
             {
-                "alterative": "",
+                "alternative": "",
                 "is_correct": true
             },
             {

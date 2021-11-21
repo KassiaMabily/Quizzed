@@ -4,6 +4,8 @@ import { StyleSheet, SafeAreaView, Text, ScrollView, View, Dimensions, Touchable
 import * as Svg from 'react-native-svg';
 import colors from '../styles/colors';
 import { boardLoad, getCurrentPhase } from '../libs/storage';
+import { StackScreenProps } from '@react-navigation/stack';
+import { RootStackParamList } from '../routes/types';
 
 const windowWidth = Dimensions.get('window').width;
 
@@ -17,8 +19,11 @@ const BOARD = [
     [0,1,0],
 ]
 
-export function MapBoard() {
+type Props = StackScreenProps<RootStackParamList, 'MapBoard'>;
+export function MapBoard({ route, navigation }: Props) {
     const scrollViewRef = createRef<ScrollView>();
+    const [ difficulty, setDifficulty ] = useState<number>(0);
+
     const [ userBoard, setUserBoard ] = useState<(boolean| null)[][]>();
     const [ currentRow, setCurrentRow ] = useState(0);
     const [ currentColumn, setCurrentColumn ] = useState(0);
@@ -57,6 +62,20 @@ export function MapBoard() {
         }
     }
 
+    
+    const countPhases = (indexRow: number, indexColumn: number) => {
+        let count = 0;
+        
+        for(var i = indexRow; i < BOARD.length; i++) {
+            for(var j = indexColumn; j < BOARD[i].length; j++){
+                if(BOARD[i][j] !== 0) {
+                    count++;
+                }
+            }
+        }
+        return count;
+    }
+    
     const renderLine = ({top = false, left = false, right = false, bottom = false}) => {
         return (
             <View style={{ position: "absolute", top: 0, zIndex: 1 }}>
@@ -91,26 +110,15 @@ export function MapBoard() {
         )
     }
 
-    const countPhases = (indexRow: number, indexColumn: number) => {
-        let count = 0;
-
-        for(var i = indexRow; i < BOARD.length; i++) {
-            for(var j = indexColumn; j < BOARD[i].length; j++){
-                if(BOARD[i][j] !== 0) {
-                    count++;
-                }
-            }
-        }
-        return count;
-    }
-
+    
     const renderCircle = ( i: number, indexRow: number, indexColumn: number ) => {
         return (
             <TouchableWithoutFeedback
                 onPress={() => {
                     const nivel_dificuldade = countPhases(indexRow,indexColumn);
                     if(nivel_dificuldade >= 1 && nivel_dificuldade <= 3) {
-                        Alert.alert(`Nível de dificuldade: ${nivel_dificuldade}`)
+                        setDifficulty(nivel_dificuldade);
+                        navigation.navigate("Question", { difficulty: nivel_dificuldade })
                     }else{
                         Alert.alert(`Você pode avançar até 3 casas!`)
                     }
@@ -120,7 +128,7 @@ export function MapBoard() {
                 <View style={{ zIndex: 999, position: "relative" }}>
                     <Svg.Svg width={size} height={size}>
                         <Svg.Circle
-                            fill={userBoard ? userBoard[indexRow][indexColumn] ? colors.white : colors.blue : colors.blue}
+                            fill={userBoard ? userBoard[indexRow][indexColumn] ? colors.green : colors.blue : colors.blue}
                             stroke={colors.blue}
                             cx={size / 2}
                             cy={size / 2}
@@ -152,7 +160,7 @@ export function MapBoard() {
         }
     
         loadStorageData();
-    }, );
+    }, []);
 
     return (
         <SafeAreaView style={styles.container}>
@@ -163,28 +171,25 @@ export function MapBoard() {
                 style={styles.scrollView}
             >
                 {
-                BOARD.map((row, indexRow) => {
-                    return (
-                    <View key={`row-${indexRow}`} style={styles.row}>
-                        {
-                        row.map((column, indexColumn) => (
-                            column !== 0 ? (
-                                <View key={`column-${indexColumn}`} style={styles.column}>
-                                    { renderCircle(column, indexRow, indexColumn) }
-                                    { renderLine(hasNeighbor(indexRow, indexColumn)) }
-                                </View>
-                            ) : (
-                                <View key={`column-${indexColumn}`} style={styles.column} />
-                            )
-                        ))
-                        }
-                    </View>
-                    )
-                })
+                    BOARD.map((row, indexRow) => {
+                        return (
+                        <View key={`row-${indexRow}`} style={styles.row}>
+                            {
+                            row.map((column, indexColumn) => (
+                                column !== 0 ? (
+                                    <View key={`column-${indexColumn}`} style={styles.column}>
+                                        { renderCircle(column, indexRow, indexColumn) }
+                                        { renderLine(hasNeighbor(indexRow, indexColumn)) }
+                                    </View>
+                                ) : (
+                                    <View key={`column-${indexColumn}`} style={styles.column} />
+                                )
+                            ))
+                            }
+                        </View>
+                        )
+                    })
                 }
-                
-                
-
             </ScrollView>
         </SafeAreaView>
     )
