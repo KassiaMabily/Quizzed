@@ -76,5 +76,1046 @@
                 "is_correct": false
             }
         ]
+    },
+    {
+        "title": "(CESPE – INFRAERO – Analista) Na BPMN 2.0, Choreography e Conversation são dois:",
+        "difficulty": 1,
+        "options": [
+            {
+                "alternative": "elementos de processos.",
+                "is_correct": false
+            },
+            {
+                "alternative": "tipos de conectores.",
+                "is_correct": false
+            },
+            {
+                "alternative": " diagramas de interação.",
+                "is_correct": true
+            },
+            {
+                "alternative": "tipos de artefatos.",
+                "is_correct": false
+            },
+            {
+                "alternative": "sub-processos do tipo evento.",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "title": "(QUADRIX – DATAPREV – Analista de Tecnologia da Informação)No contexto do gerenciamento de processos de negócio, a notação conhecida como BPMN 2.0 define cinco categorias básicas de elementos. Assinale a alternativa em que os elementos não pertencem à mesma categoria",
+        "difficulty": 1,
+        "options": [
+            {
+                "alternative": "Eventos (events) e gateways.",
+                "is_correct": false
+            },
+            {
+                "alternative": "Fluxos de seqüência (sequence flows) e associações (associations).",
+                "is_correct": false
+            },
+            {
+                "alternative": " Fluxos de seqüência (sequence flows) e fluxo de mensagens (message flows).",
+                "is_correct": false
+            },
+            {
+                "alternative": " Piscinas (pools) e raias (lanes).",
+                "is_correct": false
+            },
+            {
+                "alternative": "Eventos (events) e grupos (groups).",
+                "is_correct": true
+            }
+        ]
+    },
+    {
+        "title": "(FCC – AL/SP – Agente Técnico Legislativo Especializado) Ocorrem durante o curso de um processo de negócio e afetam o fluxo do processo. Comumente têm uma causa e um resultado. Podem ser de três tipos: inicial, intermediário ou final. Trata-se de",
+        "difficulty": 1,
+        "options": [
+            {
+                "alternative": " fork.",
+                "is_correct": false
+            },
+            {
+                "alternative": "data object.",
+                "is_correct": false
+            },
+            {
+                "alternative": "gateway.",
+                "is_correct": false
+            },
+            {
+                "alternative": "event.",
+                "is_correct": true
+            },
+            {
+                "alternative": "merging.",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "title": "(FCC – INFRAERO – Analista) Na BPMN 2.0, o símbolo de uma tarefa contendo, em seu canto esquerdo superior, o desenho de duas engrenagens sobrepostas, significa:",
+        "difficulty": 1,
+        "options": [
+            {
+                "alternative": "Looping Task.",
+                "is_correct": false
+            },
+            {
+                "alternative": "User Task.",
+                "is_correct": false
+            },
+            {
+                "alternative": "Business Rule Task.",
+                "is_correct": false
+            },
+            {
+                "alternative": "Manual Task.",
+                "is_correct": false
+            },
+            {
+                "alternative": " Service Task.",
+                "is_correct": true
+            }
+        ]
+    },
+    {
+        "title": "(FCC  – TRT/BA – Analista Judiciário) A notação BPMN é rica em elementos de representação, o que torna possível modelar processos mais complexos. Para representar uma divisão de fluxo (como em uma exceção) ou junções de fluxo, utiliza-se:",
+        "difficulty": 1,
+        "options": [
+            {
+                "alternative": "Seta com ponta vazia, que é chamada ponteiro.",
+                "is_correct": false
+            },
+            {
+                "alternative": "Hexágono, que é chamado conector.",
+                "is_correct": false
+            },
+            {
+                "alternative": "Losango, que é chamado de gateway.",
+                "is_correct": true
+            },
+            {
+                "alternative": "Paralelogramo, que é chamado conector.",
+                "is_correct": false
+            },
+            {
+                "alternative": "Círculo, que é chamado concentrador.",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "title": "(FCC  – TRT/BA – Analista Judiciário) A notação BPMN é rica em elementos de representação, o que torna possível modelar processos mais complexos. Para representar uma divisão de fluxo (como em uma exceção) ou junções de fluxo, utiliza-se:",
+        "difficulty": 1,
+        "options": [
+            {
+                "alternative": "Inclusivo, representado por um losango com um círculo no centro.",
+                "is_correct": true
+            },
+            {
+                "alternative": "Baseado em evento, representado por um losango com um asterisco no centro.",
+                "is_correct": false
+            },
+            {
+                "alternative": "Paralelo, representado por um losango com X no centro.",
+                "is_correct": false
+            },
+            {
+                "alternative": "Exclusivo, representado por um losango vazio..",
+                "is_correct": false
+            },
+            {
+                "alternative": "Complexo, representado por um losango com um círculo no centro contendo um sinal +.",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "title": "(FCC – Prefeitura de Recife/PE – Analista de Planejamento, Orçamento e Gestão) Na BPMN 2 os gateways representam uma divisã o ou convergência no gráfico do processo. Os gateways:",
+        "difficulty": 1,
+        "options": [
+            {
+                "alternative": "Paralelos (parallel gateways) indicam que das duas tarefas subsequentes, apenas uma poderá ser executada.",
+                "is_correct": false
+            },
+            {
+                "alternative": "Inclusivo (inclusive gateway) divide o processo apenas em duas ramificações, com uma explicação de qual condição deve ser atendida para que o fluxo continue em cada uma das ramificações.",
+                "is_correct": false
+            },
+            {
+                "alternative": "Complexos (complex gateways) modelam  comportamento de sincronização linear sem expressões para descrever o comportamento do gateway.",
+                "is_correct": false
+            },
+            {
+                "alternative": "Baseados em evento (event- based gateways) podem indicar que a continuação do processo depende de mais dados, de a guardar algum tempo ou ainda de atender outra condição.",
+                "is_correct": true
+            },
+            {
+                "alternative": "Exclusivos (exclusive gateways) indicam que as tarefas subsequentes poderão ocorrer simultaneamente",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "title": "(FCC  – AL/S P – Agente Técnico Legislativo Especializado) Os símbolos seta  inteira e seta tracejada (considerando que a inteira tem sua ponta preenchida e a tracejada tem a ponta vazada e um pequeno círculo em sua origem – cauda) são as respectivas notações de:",
+        "difficulty": 1,
+        "options": [
+            {
+                "alternative": "Associação e fluxo de mensagem.",
+                "is_correct": false
+            },
+            {
+                "alternative": "Associação e fluxo de sequência.",
+                "is_correct": false
+            },
+            {
+                "alternative": "Fluxo de sequência e associação.",
+                "is_correct": false
+            },
+            {
+                "alternative": "Fluxo de sequência e fluxo de mensagem.",
+                "is_correct": true
+            },
+            {
+                "alternative": "Fluxo de mensagem e fluxo de sequência.",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "title": "(QUADRIX – SERPRO – Administração de Serviços) Na notação BPMN, uma piscina (Pool) representa:",
+        "difficulty": 1,
+        "options": [
+            {
+                "alternative": "Uma representação gráfica de um participante em uma colaboração.",
+                "is_correct": true
+            },
+            {
+                "alternative": "Uma divisão Ou partição dentro de um processo.",
+                "is_correct": false
+            },
+            {
+                "alternative": "Um termo genérico para representar um trabalho que a organização executa.",
+                "is_correct": false
+            },
+            {
+                "alternative": "Algo que 'acontece' ao longo de um processo.",
+                "is_correct": false
+            },
+            {
+                "alternative": "algo que demonstra a ordem em que as atividades acontecem em um processo.",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "title": "(FCC  – TRT/PA – Analista Judiciário) O modelo de processos de negócio de uma organização, desenhado com BPMN, indica a  necessidade de mostrar as atividades realizadas pelo departamento de vendas e sua interação com a área de contabilidade que também realiza suas atividades quando acionada no processo. Assim, considerando a organização como uma Pool, para mostrar quem realiza cada atividade departamental nessa Pool, a notação dispõe, no BPD, do símbolo:",
+        "difficulty": 1,
+        "options": [
+            {
+                "alternative": "Gateway.",
+                "is_correct": false
+            },
+            {
+                "alternative": "Lane.",
+                "is_correct": true
+            },
+            {
+                "alternative": "Group.",
+                "is_correct": false
+            },
+            {
+                "alternative": "Event.",
+                "is_correct": false
+            },
+            {
+                "alternative": "Data object.",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "title": "(FCC / DPE-RR - 2015) Ao fazer a modelagem de processos utilizando a notação BPMN, um Analista de Sistemas utilizou:",
+        "difficulty": 1,
+        "options": [
+            {
+                "alternative": "Retângulos para representar os gateways, cujas anotações indicam seu tipo e comportamento. .",
+                "is_correct": false
+            },
+            {
+                "alternative": "Retângulos com cantos arredondados para representar atividades, que são um passo dentro do processo e consomem recursos, com o tempo e custos.",
+                "is_correct": true
+            },
+            {
+                "alternative": "Retângulos para representar eventos, que podem iniciar um processo, interromper um processo ou uma atividade, parar o processo ou finalizá-lo.",
+                "is_correct": false
+            },
+            {
+                "alternative": "Setas sólidas para representar as linhas de mensagem, que indicam a comunicação entre 2 pools.",
+                "is_correct": false
+            },
+            {
+                "alternative": "Setas tracejadas para conectar as figuras básicas, representando o controle do fluxo e a sequência das atividades.",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "title": "(FCC / TRT/3ª Região - 2015) Na BPMN, considere:\n",
+        "difficulty": 1,
+        "options": [
+            {
+                "alternative": "Atividade, Evento e Linha de Sequência.",
+                "is_correct": false
+            },
+            {
+                "alternative": "Grupo, Objeto de Dados e Associação.",
+                "is_correct": true
+            },
+            {
+                "alternative": "Tarefa, Objeto de Dados e Linha de Sequência.",
+                "is_correct": false
+            },
+            {
+                "alternative": "Fase, Evento e Associação.",
+                "is_correct": false
+            },
+            {
+                "alternative": "Atividade, Grupo e Linha de Mensagem.",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "title": "O modelo de maturidade dos processos é uma métrica para mensurar os resultados com a implementação da ferramenta de BPM (Gerenciamento de Processos de Negócio). O modelo de maturidade dos processos visa a disponibilizar auxílio para as organizações, apresentando as melhores práticas para a utilização de BPM, como objetiva também disponibilizar o uso correto dessa ferramenta. Além do gerenciamento que o modelo de maturidade fornece, ele disponibiliza uma ação contínua de análise dos resultados da implementação de BPM. Com relação ao uso do modelo de maturidade, associe os itens, utilizando o código a seguir:\nI- AS IS\nII- Roadmap\nIII- Benchmarking\n( ) É uma ferramenta de levantamento e mapeamento, avalia os pontos fortes e fracos.\n( ) É uma ferramenta que busca sempre a melhoria das práticas nos processos organizacionais.\n( )  É uma ferramenta que mapeia o desenvolvimento das melhorias executadas no processos.\nAgora, assinale a alternativa que apresenta a sequência CORRETA:",
+        "difficulty": 2,
+        "options": [
+            {
+                "alternative": "III - II - I. ",
+                "is_correct": false
+            },
+            {
+                "alternative": " I  - II - III.",
+                "is_correct": false
+            },
+            {
+                "alternative": "I  - III - II.",
+                "is_correct": true
+            },
+            {
+                "alternative": " II - I  - III.",
+                "is_correct": false
+            },
+            {
+                "alternative": " II - III  - I.",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "title": "Todas as atividades existentes devem possuir um processo para sua execução ou seu desenvolvimento. Os processos de negócios executam um papel de delinear e desenhar, para que o todo tenha um bom desempenho dentro da organização. Partindo do pressuposto de que todas as atividades devem passar por processos, qual a melhor alternativa que apresenta desses auxiliam para um bom desempenho e eficiência dos processos de negócio?",
+        "difficulty": 2,
+        "options": [
+            {
+                "alternative": "Conhecimento, objetivos tangíveis, gestão e áreas.",
+                "is_correct": false
+            },
+            {
+                "alternative": "Formação, treinamento, resultados e negociação.",
+                "is_correct": false
+            },
+            {
+                "alternative": "Guia, negócio, execução e desenvolvimento.",
+                "is_correct": false
+            },
+            {
+                "alternative": "Gestão, modelagem, análise e gerenciamento.",
+                "is_correct": true
+            },
+            {
+                "alternative": "Gestão e modelagem somente.",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "title": "[GPN - MATERIAL ESO UCL 2021] A organização moderna, formada por profissionais capacitados e motivados, trabalhará _________ .",
+        "difficulty": 2,
+        "options": [
+            {
+                "alternative": "Com processo, pois esta é uma ferramenta que todos conhecem.",
+                "is_correct": false
+            },
+            {
+                "alternative": "Compartilhar a informação é a uma das formas fácil de temos para produzirmos com bons resultados.",
+                "is_correct": false
+            },
+            {
+                "alternative": "Por processo, pois este é o formato ou a configuração da organização que trabalha a partir do espírito de equipe e de forma horizontalizada. ",
+                "is_correct": true
+            },
+            {
+                "alternative": "Através de processos e com pessoas sem chefia.",
+                "is_correct": false
+            },
+            {
+                "alternative": "Com equipamento de última geração, bem remunerados.",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "title": "[GPN - MATERIAL ESO UCL 2021] Medimos, para que possamos:",
+        "difficulty": 1,
+        "options": [
+            {
+                "alternative": "Verificar holisticamente a concorrência.",
+                "is_correct": false
+            },
+            {
+                "alternative": "Construir o CICLO PDCA.",
+                "is_correct": false
+            },
+            {
+                "alternative": "Agregar valores ao trabalharmos por processo.",
+                "is_correct": false
+            },
+            {
+                "alternative": "Monitorar, controlar e aperfeiçoar o nosso desempenho.",
+                "is_correct": true
+            },
+            {
+                "alternative": "Todas as alternativas acima.",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "title": "[GPN - MATERIAL ESO UCL 2021] Definir padrões de comparação, avaliar desempenho, tomar medidas corretivas e avaliar resultados são atribuições de qual das funções administrativas?",
+        "difficulty": 2,
+        "options": [
+            {
+                "alternative": "Direção",
+                "is_correct": false
+            },
+            {
+                "alternative": "Controle",
+                "is_correct": true
+            },
+            {
+                "alternative": "Planejamento",
+                "is_correct": false
+            },
+            {
+                "alternative": "Organização",
+                "is_correct": false
+            },
+            {
+                "alternative": "Sistematização",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "title": "[GPN - MATERIAL ESO UCL 2021] Com relação à Gestão por Processos, identifique a alternativa CORRETA:",
+        "difficulty": 2,
+        "options": [
+            {
+                "alternative": "A gestão por processos é uma tendência nas organizações, mesmo não contribuindo significativamente para o aumento da qualidade e para a redução dos custos dos produtos e serviços.",
+                "is_correct": false
+            },
+            {
+                "alternative": "A gestão por processos tem a seguinte hierarquia decrescente de estágios: macroprocessos, processos, operações e atividades.",
+                "is_correct": false
+            },
+            {
+                "alternative": "Os quatro pilares fundamentais da gestão por processos são: valores, crença, lucro e cultura.",
+                "is_correct": false
+            },
+            {
+                "alternative": "O fluxo de um processo, desenhado através de um fluxograma, deve retratar com clareza na organização as relações entre os clientes e fornecedores.",
+                "is_correct": false
+            },
+            {
+                "alternative": "Na gestão por processos, as necessidades dos clientes são traduzidas como requisitos de processos a serem desenvolvidos pela organização.",
+                "is_correct": true
+            }
+        ]
+    },
+    {
+        "title": "[GPN - MATERIAL ESO UCL 2021] O que significa o termo inglês outsourcing?",
+        "difficulty": 1,
+        "options": [
+            {
+                "alternative": "A Outsourcing está ligado a forma como as empresas fazem negócios, ou seja, se usam franquias e canais de distribuição ou se fazem a venda direta aos seus consumidores.",
+                "is_correct": false
+            },
+            {
+                "alternative": "No Brasil, o termo usado é terceirização. Desta forma, outsourcing significa terceirizar um serviço que não é considerado central para o negócio. ",
+                "is_correct": true
+            },
+            {
+                "alternative": "Os quatro pilares fundamentais da gestão por processos são: valores, crença, lucro e cultura.",
+                "is_correct": false
+            },
+            {
+                "alternative": "Significa atrair recursos externos oferecendo pacotes de benefícios vantajosos para a troca de empresas pelos executivos.",
+                "is_correct": false
+            },
+            {
+                "alternative": "Nenhuma das alternativas acima.",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "title": "[GPN - MATERIAL ESO UCL 2021] Com base nos três tipos de processos estudados pela Gestão por processos, analise os itens a seguir e assinale a alternativa que apresenta qual(is) está(ão) CORRETO(S):\nI. Os Processos Primários também podem ser chamados de Finalísticos ou Essenciais.\nII. Os Processos Primários estão ligados diretamente ao “core business” das organizações.\nIII. Processos de Apoio são característicos por gerar valor diretamente ao cliente final.\nIV. As equipes de TI e infraestrutura são um exemplo de Processos Gerenciais.",
+        "difficulty": 2,
+        "options": [
+            {
+                "alternative": "Apenas I está correto.",
+                "is_correct": false
+            },
+            {
+                "alternative": "Apenas I, II e IV estão corretos.",
+                "is_correct": false
+            },
+            {
+                "alternative": "Apenas I e II estão corretos ",
+                "is_correct": true
+            },
+            {
+                "alternative": "Apenas I, II e III estão corretos.",
+                "is_correct": false
+            },
+            {
+                "alternative": "Todas estão corretas",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "title": "[GPN - MATERIAL ESO UCL 2021] Quais das afirmativas abaixo identifica a diferença entre gestão funcional e gestão por processo?",
+        "difficulty": 2,
+        "options": [
+            {
+                "alternative": "A diferença ocorre apenas para os gestores, pois modificam sua área de comando e passam a administrar as pessoas disciplinarmente.",
+                "is_correct": false
+            },
+            {
+                "alternative": "Na gestão funcional os colaboradores são distribuídos por departamento, e na gestão por processos fazem parte de uma equipe. ",
+                "is_correct": true
+            },
+            {
+                "alternative": "Para a empresa não existe diferença, pois os custos operacionais não se alteram entre os dois métodos.",
+                "is_correct": false
+            },
+            {
+                "alternative": "Na gestão funcional todos os colaboradores participam na integração dos processos, e na gestão por processos cada processos é analisado individualmente.",
+                "is_correct": false
+            },
+            {
+                "alternative": "Gestão por processos ocupa um espaço maior na empresa enquanto a gestão funcional tem um espaço mais reduzido.",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "title": "[GPN - MATERIAL ESO UCL 2021] A gestão de processos visa:",
+        "difficulty": 1,
+        "options": [
+            {
+                "alternative": "à otimização das atividades na utilização dos recursos da organização.",
+                "is_correct": true
+            },
+            {
+                "alternative": "à definição clara da cadeia hierárquica funcional de uma organização",
+                "is_correct": false
+            },
+            {
+                "alternative": "ao aumento da eficácia na tomada de decisões em contextos estratégicos críticos.",
+                "is_correct": false
+            },
+            {
+                "alternative": "à valorização de um processo organizacional mais centrado nos relacionamentos pessoais humanizados.",
+                "is_correct": false
+            },
+            {
+                "alternative": "à redução dos contenciosos jurídicos que podem afetar a produtividade da organização.",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "title": "[GPN - MATERIAL ESO UCL 2021] Os processos de negócio definem a maneira como as organizações executam o trabalho para gerar valor aos seus clientes.\nCom relação ao conceito de gestão de processos, assinale a alternativa INCORRETA.",
+        "difficulty": 1,
+        "options": [
+            {
+                "alternative": "A modelagem de processos de negócio consiste em um conjunto de atividades para criação de representações de negócios existentes ou propostos, visando a criação de uma representação do processo de maneira completa e precisa.",
+                "is_correct": false
+            },
+            {
+                "alternative": "As regras de negócio impõem restrições e orientam decisões que impactam a natureza e o desempenho do processo.",
+                "is_correct": false
+            },
+            {
+                "alternative": "O principal objetivo dos desenhos dos processos é buscar resolver problemas de curto prazo, atendendo às solicitações das áreas funcionais. ",
+                "is_correct": true
+            },
+            {
+                "alternative": "Os processos de negócio podem ser expressos pela modelagem em diversos níveis de detalhe, desde uma visão abstrata até uma visão mais detalhada.",
+                "is_correct": false
+            },
+            {
+                "alternative": "Nenhuma das alternativas anteriores.",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "title": "[GPN - MATERIAL ESO UCL 2021] É própria da gestão de processos, a seguinte tipologia de processos:",
+        "difficulty": 2,
+        "options": [
+            {
+                "alternative": "Gerencial, finalístico e meios.",
+                "is_correct": true
+            },
+            {
+                "alternative": "Gerencial, supervisão e operacional.",
+                "is_correct": false
+            },
+            {
+                "alternative": "Organizacional, funcional e tático",
+                "is_correct": false
+            },
+            {
+                "alternative": "Operacional, tático e estratégico",
+                "is_correct": false
+            },
+            {
+                "alternative": "Nenhuma das alternativas anteriores.",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "title": "[GPN - MATERIAL ESO UCL 2021] Empresas que adotam o modelo de administração por processos são também chamadas de empresas:",
+        "difficulty": 2,
+        "options": [
+            {
+                "alternative": "Funcionais",
+                "is_correct": true
+            },
+            {
+                "alternative": "Horizontais.",
+                "is_correct": false
+            },
+            {
+                "alternative": "Verticais.",
+                "is_correct": false
+            },
+            {
+                "alternative": "Divisionais.",
+                "is_correct": false
+            },
+            {
+                "alternative": "Nenhuma das alterntivas anteriores.",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "title": "[GPN - MATERIAL ESO UCL 2021] Analise as afirmativas abaixo e assinale o que se pede:\nI. Macroprocessos são grandes conjuntos de atividades por meio das quais a organização cumpre a sua missão, gerando valor para o cliente. Correspondem às grandes funções da organização, para as quais devem estar voltadas todas as suas unidades internas e descentralizadas.\nII. Um macroprocesso engloba vários outros processos capazes de satisfazer às necessidades dos clientes/usuários. Esses processos podem ser classificados como finalísticos, de apoio ou de gerenciamento.\nIII. Cada processo está restrito a um departamento da organização ao qual está vinculado.\nIV. O valor do produto ou serviço desenvolvido por uma organização é por ela fixado, já que é ela que realiza os processos.\nAssinale a sequencia em que as alternativas são as corretas:",
+        "difficulty": 2,
+        "options": [
+            {
+                "alternative": "I, II e III, apenas.",
+                "is_correct": false
+            },
+            {
+                "alternative": "I, apenas.",
+                "is_correct": false
+            },
+            {
+                "alternative": "I e II, apenas.",
+                "is_correct": true
+            },
+            {
+                "alternative": "I, II, III e IV.",
+                "is_correct": false
+            },
+            {
+                "alternative": "I, III, e IV, apenas.",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "title": "O ciclo PDCA (Planejamento, Desenvolvimento, Controle e Ação) é uma ferramenta de gestão que visa à melhoria contínua das etapas de um processo. Acerca desse assunto, analise as afirmativas abaixo.\nI - Implementar o processo de acordo com as especificações.\nII - Assegurar o alinhamento entre o processo e o contexto da organização.\nIII - Atuar de acordo com os dados de desempenho do processo.\nIV - Medir o desempenho das atividades executadas.\nAssinale a alternativa correta.",
+        "difficulty": 2,
+        "options": [
+            {
+                "alternative": "A afirmativa III refere-se à fase de controle",
+                "is_correct": false
+            },
+            {
+                "alternative": "A afirmativa IV refere-se à fase de controle ",
+                "is_correct": true
+            },
+            {
+                "alternative": "As afirmativas I e II referem-se à fase de desenvolvimento",
+                "is_correct": false
+            },
+            {
+                "alternative": "A afirmativa I refere-se à fase de planejamento",
+                "is_correct": false
+            },
+            {
+                "alternative": "A afirmativa I refere-se à fase de ação",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "title": "No que concerne a definições de processos, considere:\nI. é um grupo de atividades realizadas numa sequência lógica com o objetivo de produzir um bem ou serviço que tem valor para um grupo específico de clientes.\nII. é aquele descrito suficientemente em detalhes, de forma que possa ser consistentemente usado.\nIII. conjunto de ações independentes para um fim produtivo específico, ao final do qual serão gerados produtos e/ou serviços e/ou informações.\nIV. qualquer atividade ou conjuntos independentes de atividades que toma um input, adiciona valor a ele e fornece um output a um cliente específico.\nV. uma ordenação específica das atividades de trabalho no tempo e no espaço, com um começo, um fim, entradas e saídas, claramente identificadas, enfim, uma estrutura para ação.\nÉ correto o que consta APENAS em:",
+        "difficulty": 2,
+        "options": [
+            {
+                "alternative": "II, III, IV e V.",
+                "is_correct": false
+            },
+            {
+                "alternative": "I, II e V. correta",
+                "is_correct": true
+            },
+            {
+                "alternative": "II, III e V.",
+                "is_correct": false
+            },
+            {
+                "alternative": "I, IV e V.",
+                "is_correct": false
+            },
+            {
+                "alternative": "I, II, III e IV.",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "title": "A ferramenta de gestão que serve para definir, com clareza, determinado problema e que se embasa nas respostas às perguntas “o quê?”, “por quê?”, “quem?”, “onde?”, “quando?”, “como?” e “quanto?” denomina-se:",
+        "difficulty": 1,
+        "options": [
+            {
+                "alternative": "Análise 5W2H.",
+                "is_correct": true
+            },
+            {
+                "alternative": "Diagrama espinha de peixe.",
+                "is_correct": false
+            },
+            {
+                "alternative": "Matriz GUT.",
+                "is_correct": false
+            },
+            {
+                "alternative": "Gráfico de Gantt.",
+                "is_correct": false
+            },
+            {
+                "alternative": "Matriz SWOT.",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "title": "A ferramenta de avaliação que identifica as melhores instituições, métodos e estratégias que elas utilizam para o sucesso de suas áreas funcionais e processos, comparando essas práticas com as da organização avaliada e verificando como estas podem ser melhoradas, denomina-se:",
+        "difficulty": 1,
+        "options": [
+            {
+                "alternative": "parametrização.",
+                "is_correct": false
+            },
+            {
+                "alternative": "Diagrama espinha de peixe.",
+                "is_correct": false
+            },
+            {
+                "alternative": "Benchmarking. ",
+                "is_correct": true
+            },
+            {
+                "alternative": "Diagrama de comparabilidade.",
+                "is_correct": false
+            },
+            {
+                "alternative": "Matriz SWOT.",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "title": "Business Activity Monitoring (BAM) é uma ferramenta de negócios que fornece indicadores de gestão. A opção pelo uso dessa ferramenta implica considerar que:",
+        "difficulty": 2,
+        "options": [
+            {
+                "alternative": "O BAM tem a vantagem de fornecer um gerenciamento de requisitos de negócios em todo o processo, que apoia a manutenção e o suporte de processos já instalados e mantém alterações oportunas já implementadas.",
+                "is_correct": false
+            },
+            {
+                "alternative": "O BAM monitora todo o desempenho registrado em tempo real e em tempo marcado para análise posterior, sendo um de seus objetivos conhecer o comportamento de um processo e sua evolução frente às métricas preestabelecidas. ",
+                "is_correct": true
+            },
+            {
+                "alternative": "O BAM é focado nas transações e nos eventos, se concentrando em, pelo menos, seis atributos-chave: Volume, Velocidade, Erros, Requisitos Funcionais, Referências de Processos e Condições Especiais.",
+                "is_correct": false
+            },
+            {
+                "alternative": "As condições especiais usadas no BAM devem ser definidas pelo gerente funcional do departamento que possui a maior quantidade de processos modelados e vão representar eventos que são pertinentes, sob a perspectiva do departamento, para a execução das transações de negócio internos",
+                "is_correct": false
+            },
+            {
+                "alternative": "A diferença entre o BAM e o BI (Business Inteligent) é que enquanto o BAM tende a analisar dados acumulados, perceber padrões e apontar tendências, o BI tende a trabalhar com resultados imediatos, utilizando banco de dados transacionais, Web Services, mensagens, etc.",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "title": "Com relação ao Gerenciamento de Processos de Negócios (Business Process Management - BPM), pode-se afirmar que:",
+        "difficulty": 2,
+        "options": [
+            {
+                "alternative": "Ele apresenta uma abordagem sistematizada para o aperfeiçoamento dos processos de produção, baseada na evolução Ciclo do PDCA (Plan-Do-Check-Act).",
+                "is_correct": false
+            },
+            {
+                "alternative": "Ele define uma estratégia operacional direcionada para garantir maior valor agregado aos clientes dos produtos e serviços desenvolvidos pela organização.",
+                "is_correct": false
+            },
+            {
+                "alternative": "Sua aplicação permite o aperfeiçoamento contínuo dos processos de produção de software.",
+                "is_correct": false
+            },
+            {
+                "alternative": "Ele permite reduzir a variabilidade nos resultados técnicos e gerenciais alcançados na produção de software.",
+                "is_correct": false
+            },
+            {
+                "alternative": "Todas as alternativas estão corretas.",
+                "is_correct": true
+            }
+        ]
+    },
+    {
+        "title": "Ser eficiente significa fazer melhor uso dos recursos disponíveis em uma organização. Esses recursos são:",
+        "difficulty": 1,
+        "options": [
+            {
+                "alternative": " humanos, individuais e de terceiros;",
+                "is_correct": false
+            },
+            {
+                "alternative": " financeiros, especiais e políticos;",
+                "is_correct": false
+            },
+            {
+                "alternative": "materiais, financeiros e de terceiros;",
+                "is_correct": false
+            },
+            {
+                "alternative": "governamentais, políticos e financeiros;",
+                "is_correct": false
+            },
+            {
+                "alternative": "financeiros, materiais e humanos.",
+                "is_correct": true
+            }
+        ]
+    },
+    {
+        "title": "As opções a seguir representam característica da BPMN, à exceção de uma. Assinale-a:",
+        "difficulty": 1,
+        "options": [
+            {
+                "alternative": "Notação gráfica destinada a padronizar o mapeamento de processos de negócio.",
+                "is_correct": false
+            },
+            {
+                "alternative": "Garante a representação da complexidade inerente aos processos.",
+                "is_correct": false
+            },
+            {
+                "alternative": "Estreitamento da visão de processos e tecnológica na organização, com um padrão flexível e expansível.",
+                "is_correct": false
+            },
+            {
+                "alternative": "Deve ser compreendido por todos na organização (administradores e técnicos).",
+                "is_correct": false
+            },
+            {
+                "alternative": "Suficiente para a implementação de sistemas de apoio. ",
+                "is_correct": true
+            }
+        ]
+    },
+    {
+        "title": "Sabendo que poucas causas levam à maioria dos problemas, bem como que a identificação da causa básica de um problema deve ser feita de acordo com uma sequência de procedimentos lógicos, baseada em fatos e dados, o recurso gráfico utilizado para estabelecer uma ordenação nas causas de perdas que devem ser saneadas denomina-se:",
+        "difficulty": 2,
+        "options": [
+            {
+                "alternative": "5W2H",
+                "is_correct": false
+            },
+            {
+                "alternative": "Diagrama de Pareto. correta",
+                "is_correct": true
+            },
+            {
+                "alternative": "Fluxograma",
+                "is_correct": false
+            },
+            {
+                "alternative": "Reengenharia",
+                "is_correct": false
+            },
+            {
+                "alternative": "Diagrama de Ishikawa.",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "title": "Com relação a gerenciamento de processos, assinale a opção correta.",
+        "difficulty": 2,
+        "options": [
+            {
+                "alternative": "Processo é um grupo de atividades realizadas em uma sequência lógica com o objetivo de produzir um bem ou um serviço com uso de recursos da organização para oferecer resultados objetivos aos seus clientes ou usuários. ",
+                "is_correct": true
+            },
+            {
+                "alternative": "Controle de processos é uma das atividades da área de conhecimento denominada gerenciamento do escopo do projeto descrita pelo PMBOK.",
+                "is_correct": false
+            },
+            {
+                "alternative": "O gerenciamento de processamento de negócios é uma forma organizada de se administrar um negócio. Essa forma não é utilizada concomitantemente com o COBIT, pois este não tem foco na organização do processo, e sim nas metas do negócio.",
+                "is_correct": false
+            },
+            {
+                "alternative": "Gerenciamento de processos, conceito que envolve gestão de negócios aliada a TI, visa melhorar os processos das organizações exclusivamente por meio de métodos, técnicas e ferramentas.",
+                "is_correct": false
+            },
+            {
+                "alternative": "Os processos organizacionais podem ser verticais ou horizontais. Os processos horizontais usualmente se referem à alocação de recursos de fundos e talentos; os verticais se relacionam a planejamento e orçamento empresarial.",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "title": "São objetivos da gestão por processos:",
+        "difficulty": 2,
+        "options": [
+            {
+                "alternative": "Determinar metas de longo prazo e adotar cursos de ação e alocação de recursos necessários à consecução dessas metas, e estabelecer um plano mestre que especifique como a organização alcançará suas metas.",
+                "is_correct": false
+            },
+            {
+                "alternative": "Elevar sensivelmente a produtividade, com eficiência e eficácia, e aumentar o valor do produto ou serviço na percepção do cliente. ",
+                "is_correct": true
+            },
+            {
+                "alternative": "Identificar os responsáveis ou líderes dos processos, para eliminar a necessidade de pontos de controle, e adotar um enfoque sistêmico dos processos.",
+                "is_correct": false
+            },
+            {
+                "alternative": "Simplificar processos, condensando ou eliminando atividades que não acrescentam valor, e adotar um enfoque pontual dos negócios da organização.",
+                "is_correct": false
+            },
+            {
+                "alternative": "Organizar as atividades em função das tarefas e não das saídas de um processo, como acontece em organizações tradicionais, e reduzir níveis hierárquicos para facilitar a implementação de uma estrutura matricial.",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "title": "São objetivos da gestão por processos:",
+        "difficulty": 2,
+        "options": [
+            {
+                "alternative": "Determinar metas de longo prazo e adotar cursos de ação e alocação de recursos necessários à consecução dessas metas, e estabelecer um plano mestre que especifique como a organização alcançará suas metas.",
+                "is_correct": false
+            },
+            {
+                "alternative": "Elevar sensivelmente a produtividade, com eficiência e eficácia, e aumentar o valor do produto ou serviço na percepção do cliente. ",
+                "is_correct": true
+            },
+            {
+                "alternative": "Identificar os responsáveis ou líderes dos processos, para eliminar a necessidade de pontos de controle, e adotar um enfoque sistêmico dos processos.",
+                "is_correct": false
+            },
+            {
+                "alternative": "Simplificar processos, condensando ou eliminando atividades que não acrescentam valor, e adotar um enfoque pontual dos negócios da organização.",
+                "is_correct": false
+            },
+            {
+                "alternative": "Organizar as atividades em função das tarefas e não das saídas de um processo, como acontece em organizações tradicionais, e reduzir níveis hierárquicos para facilitar a implementação de uma estrutura matricial.",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "title": "O artefato de anotação de texto (annotation) é um elemento que pode ser utilizado para __________________________________. É representado por uma área de texto marcada com a borda lateral, e pode ou não estar conectado a elementos do diagrama",
+        "difficulty": 1,
+        "options": [
+            {
+                "alternative": "indicar que a tarefa deve ser documentada. ",
+                "is_correct": false
+            },
+            {
+                "alternative": "sinalizar grupos de atividades dando-lhes algum destaque.",
+                "is_correct": false
+            },
+            {
+                "alternative": "agregar comentários ao processo ou a um elemento",
+                "is_correct": true
+            },
+            {
+                "alternative": "conectar os elementos de artefatos ao diagrama",
+                "is_correct": false
+            },
+            {
+                "alternative": "organizar os processos de um diagrama.",
+                "is_correct": false
+            }
+        ]
+    },
+    {
+        "title": "Sobre a modelagem de processos BPMN, assinale a melhor alternativa referente Atividade Cíclica - Loop:",
+        "difficulty": 1,
+        "options": [
+            {
+                "alternative": " É representado por uma linha circular com seta",
+                "is_correct": false
+            },
+            {
+                "alternative": "É utilizado quando o número de repetições não é conhecido.",
+                "is_correct": false
+            },
+            {
+                "alternative": "A atividade será realizada pelo menos uma vez.",
+                "is_correct": false
+            },
+            {
+                "alternative": "Uma atividade de loop terá uma expressão booleana que é avaliada para cada ciclo",
+                "is_correct": false
+            },
+            {
+                "alternative": "Todas as alternativas anteriores.",
+                "is_correct": true
+            }
+        ]
     }
+    
 ]
