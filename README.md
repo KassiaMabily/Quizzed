@@ -16,7 +16,7 @@
 </p>
 
 <h4 align="center">
-	🚧 Finished 🚧
+	🚧 Development 🚧
 </h4>
 
 ## 💻 Overview
