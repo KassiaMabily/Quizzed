@@ -27,6 +27,8 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "description": "UCL 2021/2 - Gestão de processos e negócios",
+    "githubUrl": "https://github.com/KassiaMabily/Quizzed"
   }
 }
